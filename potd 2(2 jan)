@@ -1,0 +1,17 @@
+Union of two arrays
+code:
+   class solution{
+     public:
+      int doUnion(int a[], int n, int b[], int m){
+         set<int>ans;
+          for(int i=0;i<n;i++)
+          {
+            ans.insert(a[i]);
+          }
+          for(int j=0;j<m;j++)
+          {
+             ans.insert(b[j]);
+          }
+          return ans.size();
+      }
+      };
